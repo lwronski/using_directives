@@ -434,7 +434,7 @@ public class Scanner {
     if (reader.ch == '"') {
       setStrVal();
       reader.nextChar();
-      td.token = Tokens.STRINGLIT;
+      td.token = Tokens.IDENTIFIER;
     } else {
       // try to recover from started string
       setStrVal();
